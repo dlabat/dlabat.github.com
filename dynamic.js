@@ -3,7 +3,7 @@
     var config;
     var nav, body, content;
 
-    var init = function(config_json) {
+    function init(config_json) {
 
         // set elements for global use
         config = config_json;
@@ -20,6 +20,7 @@
             var projectLink = document.createElement('a');
             projectLink.href = "#" + project.link_id;
             projectLink.innerHTML = project.title;
+
             // create click eventlistener for projectLink
             projectLink.onclick = function() {
                 // fade content out content onClick
@@ -67,12 +68,10 @@
     var Template = {
 
         page : function (projectContent, doneEmbedding) {
-            // assemble content HTML
-            content.innerHTML = [
-                '<h1>' + projectContent.title + '</h1>',
-                '<p>' + projectContent.desc + '</p>',
-            ].join('');
-            doneEmbedding();
+	        $.get(projectContent.src, function(page_html){
+				content.innerHTML = page_html;
+	            doneEmbedding();
+	        });
         },
 
         processing : function(projectContent, doneEmbedding) {

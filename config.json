@@ -1,14 +1,17 @@
 {
+
     "content" : [
-            {
-                "type" : "processing",
-                "title" : "Eyes Follow",
-                "width" : 300,
-                "height" : 300,
-                "src" : "pde/eyes.pde",
-                "link_id" : "eyes",
-                "desc" : "Eyes that follow a point."
-            },
+    
+    		{
+    			"type" : "page",
+    			"title" : "Documents",
+    			"src" : "pages/docs.html"
+    		}, 
+    		{
+    			"type" : "page",
+    			"title" : "Resume",
+    			"src" : "pages/resume.htm"
+    		},
             {
                 "type" : "processing",
                 "title" : "Vert Rainbow",
@@ -17,15 +20,10 @@
                 "src" : "pde/VertRainboow.pde",
                 "link_id" : "vertRainbow",
                 "desc" : "Move your mouse left or right while on the sketch to change colors."
-            },
-            {
-                "type" : "processing",
-                "title" : "Particle Waves",
-                "width" : 500,
-                "sketch_height" : 300,
-                "src" : "pde/waves.pde",
-                "link_id" : "waves",
-                "desc" : "Use &uarr; &darr; &rarr; &larr; keys to adjust the particle/wave field."
             }
+
+            
+            
         ]
+
 }
