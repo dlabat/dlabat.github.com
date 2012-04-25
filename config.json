@@ -10,7 +10,7 @@
     		{
     			"type" : "page",
     			"title" : "Resume",
-    			"src" : "pages/resume.htm"
+    			"src" : "pages/resume.html"
     		},
             {
                 "type" : "processing",
