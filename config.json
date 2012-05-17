@@ -1,7 +1,5 @@
 {
-
     "content" : [
-    
     		{
     			"type" : "page",
     			"title" : "Documents",
@@ -10,20 +8,7 @@
     		{
     			"type" : "page",
     			"title" : "Resume",
-    			"src" : "pages/resume.htm"
-    		},
-            {
-                "type" : "processing",
-                "title" : "Vert Rainbow",
-                "width" : 800,
-                "sketch_height" : 150,
-                "src" : "pde/VertRainboow.pde",
-                "link_id" : "vertRainbow",
-                "desc" : "Move your mouse left or right while on the sketch to change colors."
-            }
-
-            
-            
+    			"src" : "pages/resume.html"
+    		}            
         ]
-
 }
